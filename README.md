@@ -1,60 +1,75 @@
-# AI PDF Chatbot using LLM + RAG
+# AI PDF Chatbot using Gemini + RAG
 
-An AI-powered PDF Question Answering Chatbot built using Large Language Models (LLM) and Retrieval-Augmented Generation (RAG).
+An AI-powered PDF Question Answering Chatbot built using Google Gemini API, Gradio, and Retrieval-Augmented Generation (RAG) concepts.
 
-This project allows users to upload PDF documents and ask questions based on the content of the PDF. The chatbot retrieves relevant context using vector embeddings and semantic search, then generates accurate and meaningful answers using a local LLM.
+This application allows users to upload PDF documents and ask questions based on the content of the uploaded file. The chatbot intelligently reads the PDF and provides accurate, context-based answers using Gemini.
+
+Live Deployment:  
+https://huggingface.co/spaces/shimanshushrivastava96/ai-pdf-chatbot-gemini
 
 ---
 
 ## Project Overview
 
-Traditional chatbots cannot understand PDF content directly.
+Traditional PDF reading is time-consuming when users need quick answers from large documents.
 
-This project solves that problem by using:
+This project solves that problem by creating an intelligent chatbot that can:
 
-- PDF Processing
-- Text Chunking
-- Vector Embeddings
-- Semantic Search
-- Local LLM Response Generation
+- Upload PDF files
+- Understand document content
+- Answer questions from the uploaded PDF
+- Provide fast and relevant responses
+- Improve productivity for document analysis
 
-The system converts PDF content into searchable vector embeddings using FAISS and HuggingFace Embeddings, then retrieves the most relevant information for answering user queries.
+This project demonstrates practical implementation of:
+
+- Generative AI
+- LLM Integration
+- Document Understanding
+- Prompt Engineering
+- API Integration
+- AI Product Deployment
+
+---
+
+## Features
+
+### PDF Upload Support
+Users can upload PDF files directly into the application.
+
+### Intelligent Question Answering
+Users can ask natural language questions from the uploaded PDF.
+
+### Gemini API Integration
+Google Gemini processes the document context and generates smart answers.
+
+### Clean Gradio Interface
+Simple and user-friendly frontend built using Gradio.
+
+### Live Public Deployment
+Deployed on Hugging Face Spaces for public access.
+
+### Recruiter-Friendly AI Project
+Production-ready portfolio project for AI/ML roles.
 
 ---
 
 ## Tech Stack
 
-### Programming Language
+### Frontend
+- Gradio
+
+### Backend
 - Python
 
-### Frameworks & Libraries
-- Gradio
-- LangChain
-- FAISS
-- HuggingFace Embeddings
-- Sentence Transformers
-- Ollama
-- PyPDF Loader
+### AI Model
+- Google Gemini 2.5 Flash
 
-### Concepts Used
-- Generative AI
-- Large Language Models (LLM)
-- Retrieval-Augmented Generation (RAG)
-- Natural Language Processing (NLP)
-- Vector Database
-- Semantic Search
+### Deployment
+- Hugging Face Spaces
 
----
-
-## Key Features
-
-- Upload PDF files
-- Process PDF content
-- Ask questions from uploaded PDF
-- Semantic Search using Vector Database
-- Local LLM Integration using Ollama
-- Reset Chat Functionality
-- Simple and clean Gradio Interface
+### Environment Management
+- Python Dotenv
 
 ---
 
@@ -66,7 +81,5 @@ AI-PDF-Chatbot-LLM-RAG/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
-└── LICENSE
-
-Update professional README
+├── .env (local only)
+└── .gitignore
